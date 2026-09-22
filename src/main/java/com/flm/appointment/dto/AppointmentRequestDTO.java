@@ -1,16 +1,18 @@
-package com.flm.appointment.dto.request;
+package com.flm.appointment.dto;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Builder
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class AppointmentRequest {
-	
+@NoArgsConstructor
+public class AppointmentRequestDTO {
 	private String patientId;
 	private String doctorId;
 	private LocalDate appointmentDate;
